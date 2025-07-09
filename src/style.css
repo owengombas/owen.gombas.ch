@@ -16,6 +16,10 @@ body {
     font-family: 'Space Mono', 'Courier New', Courier, monospace;
 }
 
+body {
+    cursor: pointer;
+}
+
 h1,
 h2,
 a {
@@ -74,6 +78,7 @@ footer.wrapper {
     border-radius: 20px;
     box-shadow: 0px 8px 24px 0px #0a0a0c5a;
     border: 1px solid #ffffff2d;
+    cursor:auto;
 }
 
 header .note {
@@ -90,6 +95,7 @@ nav {
 }
 
 footer .note {
+    box-shadow: 5px 0px 24px 0px #0a0a0c5a;
     padding: 8px 15px;
     border-radius: 15px;
 }
