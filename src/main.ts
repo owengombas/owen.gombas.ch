@@ -1,3 +1,4 @@
+import "./style.css";
 import init, { SurfaceData } from "../wasm/pkg";
 import Plotly from "plotly.js-dist-min";
 
