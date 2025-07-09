@@ -5,8 +5,8 @@ import Plotly from "plotly.js-dist-min";
 await init();
 
 // Call WASM constructor to get surface data
-const [xMin, xMax, xSteps] = [-5, 5, 70];
-const [yMin, yMax, ySteps] = [-5, 5, 70];
+const [xMin, xMax, xSteps] = [-10, 10, 150];
+const [yMin, yMax, ySteps] = [-10, 10, 150];
 const surface = new SurfaceData(xMin, xMax, xSteps, yMin, yMax, ySteps);
 
 const x = Array.from(surface.x());
@@ -39,11 +39,7 @@ function getTraces() {
     y,
     z,
     type: "contour",
-    colorscale: [
-      [0, "black"],
-      [0.85, "gray"],
-      [1, "white"]
-    ],
+    colorscale: "Jet",
     showscale: false,
     name: "Rastrigin"
   };
@@ -87,7 +83,7 @@ function animatePath(xPath: number[], yPath: number[]) {
     }, [1]); // <-- Trace index [1] (scatter trace only)
 
     i++;
-  }, 20);
+  }, 50);
 }
 document.body.addEventListener("click", (event) => {
   const plot = document.getElementById("plot");
