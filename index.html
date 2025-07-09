@@ -75,6 +75,14 @@
     opacity: 0.92;
   }
 
+  h1 {
+    padding-bottom: 0px;
+  }
+
+  h2 {
+    padding-bottom: 2px;
+  }
+
   h2 {
     font-size: 0.7em;
     font-weight: normal;
@@ -93,13 +101,27 @@
   }
 
   .note {
+    display: block;
     width: unset;
     flex: unset;
-    flex-direction: row;
     font-size: 0.6em;
     padding: 8px 15px;
     border-radius: 13px;
     max-width: unset;
+  }
+
+  @media (max-device-width: 430px) {
+    * {
+      font-size: 12pt;
+    }
+    h1 {
+      padding-bottom: 5px;
+    }
+    .links {
+      padding-top: 8px;
+      flex-direction: column;
+      gap: 5px;
+    }
   }
 </style>
 
@@ -121,7 +143,9 @@
     </div>
 
     <div class="note-wrapper">
-      <div class="note">Ah and here is a&nbsp;<a href="https://github.com/owengombas/owen.gombas.ch" target="_blank">WebAssembly gradient descent implementation on the Rastrigin function</a>&nbsp;you can play with</div>
+      <div class="note">Ah and here is a&nbsp;<a href="https://github.com/owengombas/owen.gombas.ch"
+          target="_blank">WebAssembly gradient descent implementation on the Rastrigin function</a>&nbsp;you can play
+        with</div>
     </div>
   </div>
   <div id="plot"></div>
