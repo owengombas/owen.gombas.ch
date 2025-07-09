@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Owen Gombas</title>
+  <title>Owen Gombas - Engineer in Computer Science with a focus on Data Science and Distributed Systems</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-BqP8IYrP.js"></script>
+  <script type="module" crossorigin src="/assets/index-AajntxYs.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BHTO5GU6.css">
 </head>
 <style>
   * {
@@ -40,32 +41,51 @@
     width: 100%;
   }
 
-  .presentation-wrapper,
-  .note-wrapper {
+  .wrapper {
     position: fixed;
     display: flex;
-    padding: 30px 50px;
-    width: 100%;
     z-index: 1;
+    width: 100%;
+    left: 0;
+    padding: 30px 30px;
   }
 
-  .presentation,
+  footer.wrapper {
+    bottom: 0;
+    align-items: center;
+    display: block;
+    width: unset;
+    flex: unset;
+    font-size: 0.6em;
+    padding: 8px 15px;
+    border-radius: 13px;
+    max-width: unset;
+  }
+
   .note {
-    display: flex;
     background: rgba(37, 35, 41, 0.4);
     backdrop-filter: blur(20px);
     border-radius: 20px;
     box-shadow: 0px 8px 24px 0px #0a0a0c5a;
-    justify-content: center;
-    padding: 20px 30px;
-    flex-direction: column;
     border: 1px solid #ffffff2d;
   }
 
-  .note-wrapper {
-    bottom: 0;
-    left: 0;
-    align-items: center;
+  header .note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+  }
+
+  nav {
+    display: flex;
+    font-size: 0.7em;
+    gap: 20px;
+  }
+
+  footer .note {
+    padding: 8px 15px;
+    border-radius: 15px;
   }
 
   h1,
@@ -86,29 +106,14 @@
     font-weight: normal;
   }
 
-  .links {
-    display: flex;
-    font-size: 0.7em;
-    gap: 20px;
-  }
-
   a {
     color: white;
     font-size: 1em;
   }
 
-  .note {
-    display: block;
-    width: unset;
-    flex: unset;
-    font-size: 0.6em;
-    padding: 8px 15px;
-    border-radius: 13px;
-    max-width: unset;
-  }
-
   @media (max-device-width: 600px) {
-    * {
+    html,
+    body {
       font-size: 13pt;
     }
 
@@ -116,41 +121,45 @@
       padding-bottom: 8px;
     }
 
-    .links {
+    .wrapper {
+      padding: 15px 15px;
+    }
+
+    .note {
+      width: 100%;
+      padding: 15px 15px;
+    }
+
+    nav {
       padding-top: 8px;
       flex-direction: column;
       gap: 5px;
-    }
-
-    .presentation-wrapper,
-    .note-wrapper {
-      padding: 15px 15px;
     }
   }
 </style>
 
 <body>
-  <div class="presentation-wrapper">
-    <div class="presentation">
+  <header class="wrapper">
+    <div class="note">
       <h1>
         Owen Gombas
       </h1>
       <h2>
         Engineer in Computer Science with a focus on Data Science and Distributed Systems
       </h2>
-      <div class="links">
+      <nav>
         <a href="https://github.com/owengombas" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/owen-calvin-gombas" target="_blank">Linkedin</a>
         <a href="https://dev.to/owen" target="_blank">dev.to</a>
         <a href="https://huggingface.com/owengombas" target="_blank">Hugging Face</a>
-      </div>
-    </div>
+      </nav>
+  </header>
 
-    <div class="note-wrapper">
-      <div class="note">Ah and, here's a&nbsp;<a href="https://github.com/owengombas/owen.gombas.ch"
-          target="_blank">Rust + WebAssembly gradient descent implementation on the Rastrigin function</a>.&nbsp;Just
-        press anywhere on the screen to start exploring!</div>
-    </div>
+  <footer class="wrapper">
+    <div class="note">Ah and, here's a&nbsp;<a href="https://github.com/owengombas/owen.gombas.ch" target="_blank">Rust
+        + WebAssembly gradient descent implementation on the Rastrigin function</a>.&nbsp;Just
+      press anywhere on the screen to start exploring!</div>
+  </footer>
   </div>
   <div id="plot"></div>
 </body>
