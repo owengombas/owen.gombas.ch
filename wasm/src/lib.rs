@@ -58,8 +58,8 @@ impl SurfaceData {
         gradient_descent(
             &*self.f,
             vec![x0_x, x0_y],
-            0.01,
-            0.5,
+            0.001,
+            0.8,
             1e-6,
             1000,
         )
