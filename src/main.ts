@@ -50,8 +50,8 @@ function getTraces() {
     y: path.y,
     type: "scatter",
     mode: "lines+markers",
-    line: { color: "red", width: 2 },
-    marker: { color: "red", size: 6 },
+    line: { color: "#FF204E", width: 2 },
+    marker: { color: "#FF204E", size: 6 },
     name: "Descent Path",
     uid: "descent_path",
   };
