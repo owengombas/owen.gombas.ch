@@ -1,0 +1,23 @@
+{
+  "name": "wasm-vite-ts-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/plotly.js": "^3.0.2",
+    "@types/plotly.js-dist-min": "^2.3.4",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.3"
+  },
+  "dependencies": {
+    "plotly.js-dist-min": "^3.0.1"
+  }
+}
