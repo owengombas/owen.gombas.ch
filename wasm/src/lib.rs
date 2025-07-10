@@ -77,6 +77,6 @@ impl SurfaceData {
     }
 
     pub fn minimize(&self, x0_x: f64, x0_y: f64) -> Vec<f64> {
-        gradient_descent(&*self.f, vec![x0_x, x0_y], 0.01, 0.8, 1e-6, 2000)
+        gradient_descent(&*self.f, vec![x0_x, x0_y], 0.01, 0.8, 1e-6, 200)
     }
 }

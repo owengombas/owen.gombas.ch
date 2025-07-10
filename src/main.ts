@@ -65,30 +65,60 @@ function getTraces() {
 // Initial plot
 Plotly.newPlot("plot", getTraces(), getLayout(), { responsive: true, staticPlot: true });
 
+function interpolateRGB(
+  start: [number, number, number],
+  end: [number, number, number],
+  steps: number
+): string[] {
+  const result: string[] = [];
+
+  for (let i = 0; i < steps; i++) {
+    const interpolated: [number, number, number] = [0, 0, 0].map((_, j) =>
+      Math.round(
+        start[j] + ((end[j] - start[j]) * i) / (steps - 1)
+      )
+    ) as [number, number, number];
+
+    result.push(`rgb(${interpolated[0]}, ${interpolated[1]}, ${interpolated[2]})`);
+  }
+
+  return result;
+}
+
 let interval: NodeJS.Timeout | undefined;
 function animatePath(xPath: number[], yPath: number[]) {
-  clearInterval(interval);
-  let i = 0;
+  if (interval) clearTimeout(interval); // clear any existing timeout
 
-  interval = setInterval(() => {
-    if (i >= xPath.length) {
-      clearInterval(interval);
-      return;
-    }
+  let i = 0;
+  const maxColors = 15;
+  const colors = interpolateRGB(
+    [255, 178, 44],
+    [250, 64, 50],
+    maxColors,
+  );
+
+  const drawNextPoint = () => {
+    if (i >= xPath.length) return;
 
     Plotly.restyle('plot', {
       x: [xPath.slice(0, i + 1)],
       y: [yPath.slice(0, i + 1)],
-      'line.color': 'red',
-      'line.width': 3,
+      'line.color': colors[Math.min(i, maxColors - 1)],
+      'line.width': 1,
       'marker.color': 'red',
-      'marker.size': 8,
-      'marker.symbol': 'circle'
-    }, [1]); // <-- Trace index [1] (scatter trace only)
+      'marker.size': 7,
+      'marker.symbol': 'circle',
+    }, [1]);
 
     i++;
-  }, 50);
+    const timeout = 50 / Math.pow(i, 2);
+    interval = setTimeout(drawNextPoint, timeout);
+    console.log(timeout)
+  };
+
+  drawNextPoint();
 }
+
 document.body.addEventListener("click", (event) => {
   const plot = document.getElementById("plot");
   const rect = plot?.getBoundingClientRect();
