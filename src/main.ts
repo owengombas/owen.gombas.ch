@@ -40,7 +40,10 @@ function getTraces() {
     y,
     z,
     type: "contour",
-    colorscale: "Jet",
+    colorscale: [
+      [0, "#222831"],
+      [1, "#DFD0B8"],
+    ],
     showscale: false,
     name: "Rastrigin"
   };
