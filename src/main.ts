@@ -1,5 +1,5 @@
 import "./style.css";
-import init, { SurfaceData } from "../wasm/pkg";
+import init, { SurfaceData, FunctionType } from "../wasm/pkg";
 import Plotly from "plotly.js-dist-min";
 
 // Initialize WASM module
@@ -8,7 +8,7 @@ await init();
 // Call WASM constructor to get surface data
 const [xMin, xMax, xSteps] = [-10, 10, 150];
 const [yMin, yMax, ySteps] = [-10, 10, 150];
-const surface = new SurfaceData(xMin, xMax, xSteps, yMin, yMax, ySteps);
+const surface = new SurfaceData(xMin, xMax, xSteps, yMin, yMax, ySteps, FunctionType.Rastrigin);
 
 const x = Array.from(surface.x());
 const y = Array.from(surface.y());
