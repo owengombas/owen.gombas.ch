@@ -1,6 +1,6 @@
-import { useEffect, useRef, useCallback } from "react";
-import { SurfaceData, FunctionType } from "../../wasm/pkg";
-import Plotly, { Layout, Data } from "plotly.js-dist-min";
+import { useEffect, useRef, useCallback } from 'react';
+import { SurfaceData, FunctionType } from '../../wasm/pkg';
+import Plotly, { Layout, Data } from 'plotly.js-dist-min';
 import './GradientDescent.css'
 
 function GradientDescent() {
@@ -24,7 +24,7 @@ function GradientDescent() {
         return Array.from({ length: steps }, (_, i) =>
             `rgb(${[0, 1, 2].map(j =>
                 Math.round(start[j] + ((end[j] - start[j]) * i) / (steps - 1))
-            ).join(", ")})`
+            ).join(', ')})`
         );
     }, []);
 
@@ -69,31 +69,31 @@ function GradientDescent() {
             x: x.current,
             y: y.current,
             z: z.current,
-            type: "contour",
+            type: 'contour',
             colorscale: [
-                [0, "#B43E25"],
-                [1, "#E2D1BB"],
+                [0, '#B43E25'],
+                [1, '#E2D1BB'],
             ],
             showscale: false,
-            name: "Rastrigin",
+            name: 'Rastrigin',
         };
 
         const pathPlot: Data = {
             x: [],
             y: [],
-            type: "scatter",
-            mode: "lines+markers",
-            line: { color: "#FF204E", width: 2 },
-            marker: { color: "#FF204E", size: 6 },
-            name: "Descent Path",
-            uid: "descent_path",
+            type: 'scatter',
+            mode: 'lines+markers',
+            line: { color: '#FF204E', width: 2 },
+            marker: { color: '#FF204E', size: 6 },
+            name: 'Descent Path',
+            uid: 'descent_path',
         };
 
         const layout: Partial<Layout> = {
             xaxis: { fixedrange: true, autorange: false, range: [xMin, xMax] },
             yaxis: { fixedrange: true, autorange: false, range: [yMin, yMax] },
             margin: { t: 0, l: 0, r: 0, b: 0 },
-            uirevision: "keep",
+            uirevision: 'keep',
         };
 
         if (plotContainerRef.current) {
@@ -140,20 +140,26 @@ function GradientDescent() {
 
         const plotEl = plotContainerRef.current;
         console.log(plotEl)
-        plotEl?.addEventListener("click", handleClick);
+        plotEl?.addEventListener('click', handleClick);
 
         return () => {
-            plotEl?.removeEventListener("click", handleClick);
+            plotEl?.removeEventListener('click', handleClick);
         };
     }, [animatePath]);
 
-    return <div className="plot-wrapper">
-        <div ref={plotContainerRef} id="plot"/>
-        <div className="note-wrapper">
+    return <div className='plot-wrapper'>
+        <div ref={plotContainerRef} id='plot'/>
+        <div className='note-wrapper'>
             <div className='note'>Ah and, here's a&nbsp;<a href='https://github.com/owengombas/owen.gombas.ch' target='_blank'>Rust
                 + WebAssembly gradient descent implementation</a> on the <a href='https://en.wikipedia.org/wiki/Rastrigin_function' target='_blank'>Rastrigin function</a>.&nbsp;Just
                 press anywhere on the screen to start exploring!
             </div>
+        </div>
+        <div className='gh-tags'>
+            <div className='gh-tag'>Rust</div>
+            <div className='gh-tag'>WebAssembly</div>
+            <div className='gh-tag'>Plotly.js</div>
+            <div className='gh-tag'>TypeScript</div>
         </div>
     </div>
 }

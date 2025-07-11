@@ -175,7 +175,7 @@ nav {
 }
 
 .gh-tag {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     padding: 0.1em 0.5em;
     border-radius: 7px;
