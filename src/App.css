@@ -178,10 +178,12 @@ nav {
 }
 
 .gh-tag {
+    display: flex;
+    align-items: center;
     background-color: black;
     color: white;
     padding: 0.1em 0.5em;
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 @media (max-width: 1000px) {
