@@ -13,7 +13,7 @@ A high-performance, WebAssembly-powered visualization tool for exploring optimiz
 | Layer           | Technology                                                    | Why It Matters                            |
 | --------------- | ------------------------------------------------------------- | ----------------------------------------- |
 | **Core Engine** | [Rust](https://www.rust-lang.org/)                            | Fast, safe systems programming            |
-| **Frontend**    | [TypeScript](https://www.typescriptlang.org/)                 | Strong typing in the browser              |
+| **Frontend**    | [React + TS](https://react.dev)                 | Strong typing in the browser              |
 | **Graphics**    | [Plotly.js](https://plotly.com/javascript/)                   | High-quality interactive 2D/3D plotting   |
 | **WASM Bridge** | [wasm-bindgen](https://rustwasm.github.io/docs/wasm-bindgen/) | Seamless JS ↔ Rust integration            |
 | **Bundler**     | [Vite](https://vitejs.dev/)                                   | Ultra-fast development & optimized builds |

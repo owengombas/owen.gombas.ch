@@ -1,0 +1,31 @@
+#plot {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.plot-wrapper {
+    box-shadow: 0px 8px 30px 0px #ebafb393;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #E2D1BB;
+    opacity: 0.8;
+    position: relative;
+    flex: 1;
+}
+
+.note-wrapper {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+
+.note {
+    font-size: 0.8em;
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(50px);
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.165);
+    border-radius: 10px;
+    box-shadow: 0px 8px 30px 0px #0000003b;
+}
