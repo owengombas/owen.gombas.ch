@@ -51,7 +51,7 @@ function App() {
   return (
     <>
       <div className='ambiance' id='ambiance-top-left' />
-      {/* <div className='ambiance' id='ambiance-bottom-right' /> */}
+      <div className='ambiance' id='ambiance-bottom-right' />
       
       <div className='app'>
         <header>

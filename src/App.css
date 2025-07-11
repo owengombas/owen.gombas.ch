@@ -51,7 +51,7 @@ header {
 }
 
 .ambiance {
-    position: absolute;
+    position: fixed;
     width: 1000px;
     height: 120px;
     z-index: -1;
@@ -59,8 +59,8 @@ header {
     background: url('/flower.png') no-repeat center center;
     background-size: cover;
     background-size: 100% 100%;
-    filter: blur(90px);
-    opacity: 0.6;
+    filter: blur(60px);
+    opacity: 0.4;
 }
 
 #ambiance-top-left {
