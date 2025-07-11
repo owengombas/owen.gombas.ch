@@ -49,53 +49,55 @@ function App() {
   ]);
 
   return (
-    <div className='app'>
-      <img src='./flower.png' className='ambiance' id='ambiance-top-left' />
-      <img src='./flower.png' className='ambiance' id='ambiance-bottom-right' />
+    <>
+      <div className='ambiance' id='ambiance-top-left' />
+      <div className='ambiance' id='ambiance-bottom-right' />
+      
+      <div className='app'>
+        <header>
+          <h1>
+            Owen Gombas
+          </h1>
+          <h2>
+            Engineer in Computer Science focused on Data Science and Distributed systems — with over 9 years of engagement in the open source community.
+          </h2>
+          <nav>
+            <a className='button gh-button' href='https://github.com/owengombas' target='_blank'>GitHub</a>
+            <a className='button' href='https://linkedin.com/in/owen-calvin-gombas' target='_blank'>Linkedin</a>
+            <a className='button' href='https://dev.to/owen' target='_blank'>dev.to</a>
+            <a className='button' href='https://huggingface.com/owengombas' target='_blank'>Hugging Face</a>
+          </nav>
+        </header>
 
-      <header>
-        <h1>
-          Owen Gombas
-        </h1>
-        <h2>
-          Engineer in Computer Science focused on Data Science and Distributed systems — with over 9 years of engagement in the open source community.
-        </h2>
-        <nav>
-          <a className='button gh-button' href='https://github.com/owengombas' target='_blank'>GitHub</a>
-          <a className='button' href='https://linkedin.com/in/owen-calvin-gombas' target='_blank'>Linkedin</a>
-          <a className='button' href='https://dev.to/owen' target='_blank'>dev.to</a>
-          <a className='button' href='https://huggingface.com/owengombas' target='_blank'>Hugging Face</a>
-        </nav>
-      </header>
-
-      <div>
-        <section class="gh">
-          {links.map(args => (
-            <a className='gh-link' href={args.url} target='_blank'>
-              <div class="gh-entry">
-                <div>
-                  <div className='gh-title-date'>
-                    <div className='gh-title'>{args.title}</div>
-                    <div className='gh-hyphen'>—</div>
-                    <div className='gh-date'>{args.date}</div>
+        <div>
+          <section class="gh">
+            {links.map(args => (
+              <a className='gh-link' href={args.url} target='_blank'>
+                <div class="gh-entry">
+                  <div>
+                    <div className='gh-title-date'>
+                      <div className='gh-title'>{args.title}</div>
+                      <div className='gh-hyphen'>—</div>
+                      <div className='gh-date'>{args.date}</div>
+                    </div>
+                    <div className='gh-description'>{args.description}</div>
                   </div>
-                  <div className='gh-description'>{args.description}</div>
+                  <div className='gh-tags'>
+                    {args.targs.map(tag => (
+                      <div className='gh-tag'>{tag}</div>
+                    ))}
+                  </div>
                 </div>
-                <div className='gh-tags'>
-                  {args.targs.map(tag => (
-                    <div className='gh-tag'>{tag}</div>
-                  ))}
-                </div>
-              </div>
-            </a>
-          ))}
-        </section>
-      </div>
+              </a>
+            ))}
+          </section>
+        </div>
 
-      <div className='gradient-descent'>
-        <GradientDescent />
+        <div className='gradient-descent'>
+          <GradientDescent />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
