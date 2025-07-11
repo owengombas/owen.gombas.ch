@@ -15,7 +15,7 @@ function App() {
       title: "🧮 alex-go",
       date: "2024",
       url: "https://github.com/owengombas/alex-go",
-      description: "A Go implementation of Microsoft's ALEX learned index structure.",
+      description: "A reliable Go implementation of Microsoft's ALEX learned index data structure.",
       targs: ["Go", "Algorithms & Data Structures", "Applied Research"],
     },
     {
