@@ -53,22 +53,22 @@ header {
 .ambiance {
     position: fixed;
     z-index: -1;
-    filter: blur(70px);
+    filter: blur(100px);
     transform: scale(0.8);
     overflow: hidden;
-    opacity: 0.15;
+    opacity: 0.4;
 }
 
 #ambiance-top-left {
-    width: 800px;
-    top: -150px;
-    left: -300px;
+    width: 900px;
+    top: -700px;
+    left: -500px;
     rotate: 45deg;
 }
 
 #ambiance-bottom-right {
     width: 800px;
-    bottom: -400px;
+    bottom: -600px;
     right: -400px;
     rotate: 45deg;
 }
@@ -129,17 +129,17 @@ nav {
     cursor: pointer;
     transition: all ease-in-out .1s;
     overflow: hidden;
-    box-shadow: 0px 8px 30px 0px #ebafb329;
+    box-shadow: 0px 5px 8px 0px #ebafb329;
 }
 
 .gh-entry:hover {
     transform: scale(1.01);
-    box-shadow: 0px 8px 30px 0px #ebafb339;
+    box-shadow: 0px 5px 15px 0px #ebafb32f;
 }
 
 .gh-entry:active {
     transform: scale(0.99);
-    box-shadow: 0px 8px 30px 0px #ebafb320;
+    box-shadow: 0px 8px 8px 0px #ebafb308;
 }
 
 .gh-title-date {
