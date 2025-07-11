@@ -23,7 +23,7 @@
 .note {
     font-size: 0.8em;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(7px);
     padding: 5px 10px;
     border: 1px solid rgba(255, 255, 255, 0.165);
     border-radius: 10px;
