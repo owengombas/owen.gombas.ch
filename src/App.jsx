@@ -33,19 +33,19 @@ function App() {
       targs: ["IA", "PyTorch", "Applied Research"],
     },
     {
-      title: "✏️ hand-drawing-swift-metal",
-      date: "2019",
-      url: "https://github.com/owengombas/hand-drawing-swift-metal",
-      description: "A lightweight 2D drawing engine built with Swift and Metal for GPU-accelerated rendering on Apple devices.",
-      targs: ["Swift", "Metal", "GPU"],
-    },
-    {
       title: "🤖 discord.ts",
       date: "2021",
       url: "https://github.com/owengombas/discord.ts",
       description: "A modular and decorator-based TypeScript framework to help build fully typed Discord bots easily.",
       targs: ["TypeScript", "Decorators"],
     },
+    {
+      title: "✏️ hand-drawing-swift-metal",
+      date: "2019",
+      url: "https://github.com/owengombas/hand-drawing-swift-metal",
+      description: "A lightweight 2D drawing engine built with Swift and Metal for GPU-accelerated rendering on Apple devices.",
+      targs: ["Swift", "Metal", "GPU"],
+    }
   ]);
 
   return (
