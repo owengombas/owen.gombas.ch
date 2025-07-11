@@ -152,7 +152,7 @@ function GradientDescent() {
         <div className='note-wrapper'>
             <div className='note'>Ah and, here's a&nbsp;<a href='https://github.com/owengombas/owen.gombas.ch' target='_blank'>Rust
                 + WebAssembly gradient descent implementation</a> on the <a href='https://en.wikipedia.org/wiki/Rastrigin_function' target='_blank'>Rastrigin function</a>.&nbsp;Just
-                press anywhere on the screen to start exploring!
+                press anywhere on the zone to start exploring!
             </div>
         </div>
         <div className='gh-tags'>
