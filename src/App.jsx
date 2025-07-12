@@ -8,7 +8,7 @@ function App() {
       title: "🫆 murmurs",
       date: "2025",
       url: "https://github.com/owengombas/murmurs",
-      description: "A production-ready, reliable, and fast Murmur3 hash function implementation built in Rust",
+      description: "A production-ready, reliable, and fast Murmur3 hash function implementation built in Rust.",
       targs: ["Rust", "C++"],
     },
     {
