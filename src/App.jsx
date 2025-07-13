@@ -59,7 +59,7 @@ function App() {
             Owen Gombas
           </h1>
           <h2>
-            Engineer in Computer Science focused on Data Science and Distributed systems — with over 9 years of engagement in the open source community.
+            Engineer in Computer Science focused on Data Science and Distributed Systems — with over 9 years of engagement in the open source community.
           </h2>
           <nav>
             <a className='button gh-button' href='https://github.com/owengombas' target='_blank'>GitHub</a>
