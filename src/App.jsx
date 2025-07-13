@@ -70,7 +70,7 @@ function App() {
         </header>
 
         <div>
-          <h3 className='shifted'>Here are some of my projects (you will find more on GitHub)</h3>
+          <h3 className='shifted'>Here are some of my projects (more on GitHub)</h3>
           <section class="gh">
             {links.map(args => (
               <a className='gh-link' href={args.url} target='_blank'>
