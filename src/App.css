@@ -148,7 +148,7 @@ nav {
 .gh-entry:hover {
     transform: scale(1.01);
     border: 1px solid #ebafb370;
-    box-shadow: 0px 5px 10px 0px #d4050f14;
+    box-shadow: 0px 5px 10px 0px #d4050f0e;
 }
 
 .gh-entry:active {
