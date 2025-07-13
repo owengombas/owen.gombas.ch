@@ -91,11 +91,10 @@ function App() {
                 </div>
               </a>
             ))}
+            <div className='gradient-descent'>
+              <GradientDescent />
+            </div>
           </section>
-
-          <div className='gradient-descent'>
-            <GradientDescent />
-          </div>
         </div>
       </div>
     </>

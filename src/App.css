@@ -33,7 +33,8 @@ header {
     gap: 5px;
 }
 
-.shifted, header {
+.shifted,
+header {
     margin-left: 8px;
 }
 
@@ -100,6 +101,7 @@ nav {
 }
 
 .gradient-descent {
+    grid-column: 1 / -1;
     height: 400px;
     display: flex;
 }
@@ -196,6 +198,7 @@ nav {
 }
 
 @media (max-width: 1000px) {
+
     html,
     body {
         font-size: 12pt;
