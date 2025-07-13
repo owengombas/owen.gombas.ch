@@ -52,7 +52,7 @@ function App() {
     <>
       <div className='ambiance' id='ambiance-top-left' />
       <div className='ambiance' id='ambiance-bottom-right' />
-      
+
       <div className='app'>
         <header>
           <h1>
@@ -70,6 +70,7 @@ function App() {
         </header>
 
         <div>
+          <h3 className='shifted'>Here are some of my projects (you will find more on GitHub)</h3>
           <section class="gh">
             {links.map(args => (
               <a className='gh-link' href={args.url} target='_blank'>
@@ -91,10 +92,10 @@ function App() {
               </a>
             ))}
           </section>
-        </div>
 
-        <div className='gradient-descent'>
-          <GradientDescent />
+          <div className='gradient-descent'>
+            <GradientDescent />
+          </div>
         </div>
       </div>
     </>
