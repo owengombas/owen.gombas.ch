@@ -33,11 +33,11 @@ function App() {
       targs: ["IA", "PyTorch", "Applied Research"],
     },
     {
-      title: "🤖 discord.ts",
-      date: "2021",
-      url: "https://github.com/owengombas/discord.ts",
-      description: "A modular and decorator-based TypeScript framework to help build fully typed Discord bots easily.",
-      targs: ["TypeScript", "Decorators"],
+      title: "🧱 graphql-composer-decorators",
+      date: "2020",
+      url: "https://owengombas.github.io/graphql-composer-decorators/",
+      description: "A GraphQL framework based on decorators and composition to eliminate redundancy and improve maintainability.",
+      targs: ["TypeScript", "GraphQL", "Developer Tool"],
     },
     {
       title: "✏️ hand-drawing-swift-metal",
