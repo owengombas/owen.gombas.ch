@@ -22,7 +22,7 @@ function App() {
       title: "🌍 distributed-gan",
       date: "2024",
       url: "https://github.com/owengombas/distributed-gan",
-      description: "A multi-discriminator GAN implementation using PyTorch's TCP/IP stack for distributed training.",
+      description: "A multi-discriminator GAN using PyTorch's TCP/IP stack for distributed training.",
       targs: ["IA", "PyTorch", "TCP/IP", "GAN", "Applied Research"],
     },
     {
