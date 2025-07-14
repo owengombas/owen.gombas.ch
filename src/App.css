@@ -68,8 +68,8 @@ h3 {
     background: url('/flower.png') no-repeat center center;
     background-size: cover;
     background-size: 100% 100%;
-    filter: blur(60px);
-    opacity: 0.4;
+    filter: blur(60px) hue-rotate(180deg);
+    opacity: 0.45;
 }
 
 #ambiance-top-left {
@@ -138,23 +138,23 @@ nav {
     backdrop-filter: blur(20px);
     position: relative;
     padding: 15px 20px;
-    border: 1px solid #ebafb360;
+    border: 1px solid #afd5eb67;
     cursor: pointer;
     transition: all ease-in-out .1s;
     overflow: hidden;
-    box-shadow: 0px 5px 8px 0px #ebafb319;
+    box-shadow: 0px 5px 8px 0px #afd5eb19;
 }
 
 .gh-entry:hover {
     transform: scale(1.01);
-    border: 1px solid #ebafb370;
-    box-shadow: 0px 5px 10px 0px #d4050f0e;
+    border: 1px solid #afd5eb78;
+    box-shadow: 0px 5px 10px 0px #afd5eb0e;
 }
 
 .gh-entry:active {
     transform: scale(0.99);
-    box-shadow: inset 0 0 10px #e039393b;
-    border: 1px solid #e039393b;
+    box-shadow: inset 0 0 10px #afd5ebad;
+    border: 1px solid #afd5eb3b;
 }
 
 .gh-title-date {
@@ -179,17 +179,18 @@ nav {
     background-size: 1200px 500px;
     background-position: -300px -30px;
     z-index: -1;
-    opacity: 0.5;
-    filter: blur(20px);
+    opacity: 0.4;
+    filter: blur(20px) hue-rotate(180deg);
     transition: all ease-in-out .2s;
 }
 
 .gh-entry:hover::before {
+    opacity: 0.5;
     background-position: -350px -40px;
 }
 
 .gh-entry:active::before {
-    opacity: 0.4;
+    opacity: 0.28;
     background-position: -450px -50px;
 }
 

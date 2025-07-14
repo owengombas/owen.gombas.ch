@@ -6,12 +6,13 @@
 }
 
 .plot-wrapper {
-    box-shadow: 0px 5px 15px 0px #ebafb352;
+    box-shadow: 0px 5px 15px 0px #afd5eb60;
     border-radius: 18px;
     overflow: hidden;
     position: relative;
-    border: 1px solid #ebafb367;
+    border: 1px solid #afd5eb3b;
     flex: 1;
+    transition: all ease-in-out .2s;
 }
 
 .note-wrapper {
@@ -25,7 +26,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
     padding: 5px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.279);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     box-shadow: 0px 8px 30px 0px #0000003b;
 }
