@@ -19,7 +19,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+    font-family: "Poppins", Helvetica, sans-serif
 }
 
 .app {
@@ -142,11 +142,11 @@ nav {
     backdrop-filter: blur(20px);
     position: relative;
     padding: 15px 20px;
-    border: 1px solid #e9eefa;
+    border: 1px solid #E8EFF9;
     cursor: pointer;
     transition: all ease-in-out .1s;
     overflow: hidden;
-    box-shadow: 0px 3px 8px 0px rgba(154, 174, 200, 0.1), inset 0 0 20px rgba(175, 213, 235, 0.4);
+    box-shadow: 0px 3px 8px 0px rgba(154, 174, 200, 0.1), inset 0 0 20px rgba(175, 213, 235, 0.2);
 }
 
 .gh-entry:hover {
@@ -157,7 +157,7 @@ nav {
 
 .gh-entry:active {
     transform: scale(0.99);
-    box-shadow: 0px 5px 15px 0px rgba(175, 213, 235, 0), inset 0 0 10px rgba(175, 213, 235, 0.633);
+    box-shadow: 0px 5px 15px 0px rgba(175, 213, 235, 0), inset 0 0 20px rgba(175, 213, 235, 0.5);
     border: 1px solid #afd5eb96;
 }
 
@@ -183,18 +183,18 @@ nav {
     background-size: 1200px 500px;
     background-position: -300px -30px;
     z-index: -1;
-    opacity: 0.35;
+    opacity: 0.25;
     filter: blur(20px) hue-rotate(180deg);
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out .4s;
 }
 
 .gh-entry:hover::before {
-    opacity: 0.45;
-    background-position: -350px -40px;
+    opacity: 0.35;
+    background-position: -380px -40px;
 }
 
 .gh-entry:active::before {
-    opacity: 0.22;
+    opacity: 0.2;
     background-position: -450px -50px;
 }
 
