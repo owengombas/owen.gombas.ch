@@ -181,6 +181,11 @@ nav {
     z-index: -1;
     opacity: 0.5;
     filter: blur(20px);
+    transition: all ease-in-out .2s;
+}
+
+.gh-entry:active::before {
+    opacity: 0.4;
 }
 
 .gh-tags {
