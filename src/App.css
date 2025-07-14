@@ -184,9 +184,13 @@ nav {
     transition: all ease-in-out .2s;
 }
 
+.gh-entry:hover::before {
+    background-position: -350px -40px;
+}
+
 .gh-entry:active::before {
     opacity: 0.4;
-    background-position: -400px -50px;
+    background-position: -450px -50px;
 }
 
 .gh-tags {
