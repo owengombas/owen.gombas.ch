@@ -186,7 +186,7 @@ nav {
 
 .gh-entry:active::before {
     opacity: 0.4;
-    background-position: -400px -30px;
+    background-position: -400px -50px;
 }
 
 .gh-tags {
