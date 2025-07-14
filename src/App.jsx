@@ -21,16 +21,16 @@ function App() {
     {
       title: "🌍 distributed-gan",
       date: "2024",
-      url: "https://github.com/owengombas/distributed-gan",
+      url: "https://github.com/owengombas/distributed-gan/blob/main/report/distributed_gan.pdf",
       description: "A multi-discriminator GAN using PyTorch's TCP/IP stack for distributed training.",
-      targs: ["IA", "PyTorch", "TCP/IP", "GAN", "GCP"],
+      targs: ["IA", "Python", "PyTorch", "TCP/IP", "GAN", "GCP"],
     },
     {
       title: "🎧 spotify-recommender",
       date: "2023",
-      url: "https://github.com/owengombas/spotify-recommender",
+      url: "https://github.com/owengombas/spotify-recommender/blob/main/report/report.pdf",
       description: "A recommender system combining collaborative and content-based filtering on Spotify datasets.",
-      targs: ["IA", "PyTorch", "Applied Research"],
+      targs: ["IA", "Python", "PyTorch", "Applied Research"],
     },
     {
       title: "🧱 graphql-composer-decorators",
