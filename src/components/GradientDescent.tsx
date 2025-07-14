@@ -158,8 +158,9 @@ function GradientDescent() {
         <div className='gh-tags'>
             <div className='gh-tag'>Rust</div>
             <div className='gh-tag'>WebAssembly</div>
-            <div className='gh-tag'>Plotly.js</div>
+            <div className='gh-tag'>React</div>
             <div className='gh-tag'>TypeScript</div>
+            <div className='gh-tag'>Plotly.js</div>
         </div>
     </div>
 }
