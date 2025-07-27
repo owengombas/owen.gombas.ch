@@ -71,8 +71,9 @@ function GradientDescent() {
             z: z.current,
             type: 'contour',
             colorscale: [
-                [0, '#FFCC94'],
-                [1, '#EFEDE9'],
+                [0, '#619df2'],
+                [0.5, '#cee6f2'],
+                [1, '#e6f2ef'],
             ],
             showscale: false,
             name: 'Rastrigin',
